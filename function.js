@@ -1,7 +1,7 @@
 window.function = function (input1, input2, input3) {
-    const input1 = input1.value
-	const input2String = input2.value
-	const threshold =input3.value
+    const targetName = input1.value;  // Assuming input1 contains the organizations JSON
+    const organizationsString = input2.value;  // Assuming input2 contains the target name
+    const matchThreshold = input3.value;  // Assuming input3 contains the threshold value
     let organizations;
 
     // Attempt to parse the JSON string, catching errors if JSON is malformed
@@ -31,4 +31,4 @@ window.function = function (input1, input2, input3) {
 
     // Return matching IDs as a comma-separated string
     return matchingIDs.join(',');
-}
+};
