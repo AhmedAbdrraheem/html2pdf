@@ -1,7 +1,7 @@
 window.function = function (input1, input2, input3) {
     const input1 = input1.value
 	const input2String = input2.value
-	const const threshold =input3.value
+	const threshold =input3.value
     let organizations;
 
     // Attempt to parse the JSON string, catching errors if JSON is malformed
