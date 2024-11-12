@@ -18,7 +18,6 @@ function findSimilarOrganizationIDsJaccard(targetName, organizationsString, matc
     try {
         organizations = JSON.parse(organizationsString);
     } catch (error) {
-        console.error("Invalid JSON format:", error);
         return "";
     }
 
@@ -42,6 +41,6 @@ const input2String = '[{"name":"GENERAL ELECTRIC","ID":"fPmGLk2qStG7YFHxA97Jdw"}
 
 // Run with a custom match threshold
 const result = findSimilarOrganizationIDsJaccard(input1, input2String);
-console.log(result); // Outputs matching IDs as a comma-separated string
+return result; // Outputs matching IDs as a comma-separated string
 
 		}
