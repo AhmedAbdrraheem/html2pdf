@@ -7,13 +7,18 @@
 		"params": [
 			{
 				"name": "input1",
-				"displayName": "First Word",
+				"displayName": "To Match",
 				"type": "string"
 			},
 			{
 				"name": "input2",
-				"displayName": "Second Word",
+				"displayName": "Possible Matches",
 				"type": "string"
+			},
+			{
+				"name": "input3",
+				"displayName": "Threshold",
+				"type": "number"
 			}
 		],
 		"result": {
