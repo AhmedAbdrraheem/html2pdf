@@ -8,8 +8,7 @@ window.function = function (input1, input2, input3) {
     try {
         organizations = JSON.parse(organizationsString);
     } catch (error) {
-        console.error("Invalid JSON format:", error);
-        return "";
+        return "Invalid JSON format";
     }
 
     // Prepare target words as a set
